@@ -1,0 +1,21 @@
+﻿.undrln {
+    text-decoration-line: underline;
+    text-decoration-color: #685067;
+}
+
+.clr {
+    color: #685067;
+}
+
+.brdr {
+    border: solid 3px;
+    border-color: #947694;
+}
+
+.high {
+    color: maroon;
+}
+
+.medium {
+    color: #C84A11;
+}

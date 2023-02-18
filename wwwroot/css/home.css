@@ -1,0 +1,20 @@
+﻿.btn {
+    outline: 2px solid #685067;
+    background-color: #947694;
+    color: white;
+}
+
+.tbl {
+    background-color: #685067;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #685067;
+    color: white;
+}
+
+.undrln {
+    text-decoration-line: underline;
+    text-decoration-color: #685067;
+}

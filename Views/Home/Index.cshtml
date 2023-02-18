@@ -1,0 +1,103 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="mb-5 mt-5 undrln">Alert Messages</h1>
+    <h5 class="mb-2"><i class="fa-solid fa-triangle-exclamation"></i> Please choose carefully the most important messages and alert all the citizens nearby. <i class="fa-solid fa-triangle-exclamation"></i></h5>
+    <h5 class="mb-5">In case you think a message is not that important, tap on the dismiss button.</h5>
+
+    <table class="table table-hover">
+        <thead class="tbl mb-5">
+            <tr>
+                <th scope="col">Alert Message</th>
+                <th scope="col">ID</th>
+                <th scope="col">Type</th>
+                <th scope="col">Timestamp</th>
+                <th scope="col">Location</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+
+            </tr>
+        </thead>
+        <tbody>
+                    <tr>
+                        <td scope="row">Message</td>
+                        <td scope="row">1</td>
+                        <td scope="row">Fire</td>
+                        <td scope="row">12:00</td>
+                        <td scope="row">Peristeri</td>
+                        <td> 
+                            <div class="">
+                                
+                                <button type="submit" class="btn">Dismiss</button>
+
+
+                            </div>
+                            
+                        </td>
+                        <td> 
+                            <div class="">
+                                
+                                <button asp-controller="Alerts" asp-action="ViewAlert" type="submit" class="btn">View</button>
+
+
+                            </div>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Message</td>
+                        <td scope="row">1</td>
+                        <td scope="row">Fire</td>
+                        <td scope="row">12:00</td>
+                        <td scope="row">Peristeri</td>
+                        <td> 
+                            <div class="">
+                                
+                                <button type="submit" class="btn">Dismiss</button>
+
+
+                            </div>
+                            
+                        </td>
+                        <td> 
+                            <div class="">
+                                
+                                <button type="submit" class="btn">View</button>
+
+
+                            </div>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Message</td>
+                        <td scope="row">1</td>
+                        <td scope="row">Fire</td>
+                        <td scope="row">12:00</td>
+                        <td scope="row">Peristeri</td>
+                        <td> 
+                            <div class="">
+                                
+                                <button type="submit" class="btn">Dismiss</button>
+
+
+                            </div>
+                            
+                        </td>
+                        <td> 
+                            <div class="">
+                                
+                                <button type="submit" class="btn">View</button>
+
+
+                            </div>
+                            
+                        </td>
+                    </tr>
+        </tbody>
+
+    </table>
+
+</div>
