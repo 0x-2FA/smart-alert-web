@@ -1,0 +1,84 @@
+﻿@model smart_alert_web.Models.Response.ImportantEventResponse
+
+
+@{
+    ViewData["Title"] = "Alert Page";
+}
+
+<div class="text-center">
+    <h1 class="mb-4 mt-5 undrln">High-risk alerts</h1>
+    <h5 class="mb-3"><i class="fa-solid fa-triangle-exclamation"></i> The alerts that are displayed below are high danger cases. <i class="fa-solid fa-triangle-exclamation"></i></h5>
+        <h5>Please alert the citizens immediately!</h5>
+
+    <table class="table mt-4 table-hover">
+        <thead class="tbl mb-5">
+            <tr>
+                <th scope="col">Danger Degree</th>
+                <th scope="col">Type</th>
+                <th scope="col">Timestamp</th>
+                <th scope="col">Location</th>
+                <th scope="col"></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @if (@Model.importantEarthquakeEvent!=null)
+            {
+                <tr>
+                    <th class="high" scope="row">High danger</th>
+                    <td scope="row">@Model.importantEarthquakeEvent.Type</td>
+                    <td scope="row">@Model.importantEarthquakeEvent.Timestamp</td>
+                    <td scope="row">@Model.importantEarthquakeEvent.Latitude, @Model.importantEarthquakeEvent.Longitude</td>
+                    <td> 
+                        <div class="">
+                                
+                            <button type="submit" class="btn">Send Alert</button>
+
+
+                        </div>
+                            
+                    </td>
+                </tr>
+            }
+            @if (@Model.importantFireEvent!=null)
+            {
+                <tr>
+                    <th class="high" scope="row">High danger</th>
+                    <td scope="row">@Model.importantFireEvent.Type</td>
+                    <td scope="row">@Model.importantFireEvent.Timestamp</td>
+                    <td scope="row">@Model.importantFireEvent.Latitude, @Model.importantFireEvent.Longitude</td>
+                    <td> 
+                        <div class="">
+                                
+                            <button type="submit" class="btn">Send Alert</button>
+
+
+                        </div>
+                            
+                    </td>
+                </tr>
+            }
+            @if (@Model.importantFloodEvent != null)
+            {
+                <tr>
+
+                    <th class="high" scope="row">High danger</th>
+                    <td scope="row">@Model.importantFloodEvent.Type</td>
+                    <td scope="row">@Model.importantFloodEvent.Timestamp</td>
+                    <td scope="row">@Model.importantFloodEvent.Latitude, @Model.importantFloodEvent.Longitude</td>
+                    <td> 
+                        <div class="">
+
+                            <button type="submit" class="btn">Send Alert</button>
+
+
+                        </div>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+</div>

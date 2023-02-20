@@ -1,0 +1,21 @@
+﻿@model smart_alert_web.Models.Event
+
+<div class="container">
+    <h1 class="mb-5 mt-5 text-center">Alert Message @Model.Id</h1>
+        <div class="card brdr"@* style="width: 25rem;*@>
+            <div class="card-body">
+                <div class="row container text-center">
+                    <h3 class="card-title text-center mb-5 mt-3 undrln">@Model.Type</h3>
+
+                        <h5 class="">•Comments:</h5>
+                         <p class="card-text">@Model.Comment</p>
+                        <h5 class="mt-4">•Timestamp:</h5> 
+                        <p class="card-text">@Model.Timestamp</p>
+                        <h5 class="mt-4">•Location:</h5>
+                        <p class="card-text mb-5">@Model.Latitude, @Model.Longitude</p>
+                   
+                </div>
+            </div>
+        </div>
+
+</div>

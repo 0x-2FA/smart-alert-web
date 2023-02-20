@@ -1,4 +1,9 @@
-﻿@model smart_alert_web.Models.LoginForm
+﻿@{
+    ViewData["Title"] = "Login Page";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+@model smart_alert_web.Models.LoginForm
 
 <div class="d-flex justify-content-center mt-4 " style="min-height: 80%;">
     <form asp-controller="Login" asp-action="Login" method="post" class="d-flex flex-column w-75 w-md-50 w-lg-25 border px-lg-5 px-3 shadow">
